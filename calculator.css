@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: linear-gradient(0deg, #000000, #4a8a42, #b8f3b1);
+    color: #F6F6F6;
+}
+    header {
+        padding: 32px;
+        text-align: center;
+    }
+        h2 {
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 24px;
+        }
+
+    .calculator-project {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: center;
+    }
+        #calculator {
+            flex-basis: 400px;
+            height: 560px;
+            padding: 20px 35px;
+            overflow: hidden;
+
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(35, 35, 35, 0.3);
+        }
+        #display {
+            width: 100%;
+            padding: 15px;
+            font-size: 3rem;
+            text-align: left;
+            
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.01);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(35, 35, 35, 0.15);
+        }
+        #keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 10px 0;
+        }
+        /* How to spot specidif item https://jsfiddle.net/w83qwtx0/ */
+        .row:first-child button:first-child, .row:last-child button:last-child {
+            width: 163px;
+        }
+        button {
+            width: 65px;
+            height: 65px;
+            font-size: 32px;
+            cursor: pointer;
+            
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.01);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(35, 35, 35, 0.15);
+        }
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.714);
+        }
+        button:active {
+            background-color: rgb(255, 255, 255);
+        }
+        .calculator-function-button {
+            background-color: rgba(56, 255, 116, 0.411);
+        }
+        .calculator-function-button:hover {
+            background-color: rgba(56, 255, 116, 0.637);
+        }
+        .calculator-function-button:active {
+            background-color: rgb(0, 255, 115);
+        }
+
+    footer {
+        padding: 32px;
+        text-align: center;
+    }
+        h1 {
+            font-size: 32px;
+            text-transform: uppercase;
+        }
