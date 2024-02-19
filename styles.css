@@ -88,15 +88,6 @@ body {
         button:active {
             background-color: rgb(255, 255, 255);
         }
-        .calculator-function-button {
-            background-color: rgba(56, 255, 116, 0.411);
-        }
-        .calculator-function-button:hover {
-            background-color: rgba(56, 255, 116, 0.637);
-        }
-        .calculator-function-button:active {
-            background-color: rgb(0, 255, 115);
-        }
 
     footer {
         padding: 32px;
