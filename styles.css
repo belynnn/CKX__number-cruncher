@@ -63,7 +63,7 @@ body{
             gap: 15px;
             padding: 10px 0;
         }
-        /* How to spot specidif item https://jsfiddle.net/w83qwtx0/ */
+        /* How to spot specific item in grid https://jsfiddle.net/w83qwtx0/ */
         .row:first-child button:first-child, .row:last-child button:last-child{
             width: 163px;
         }
